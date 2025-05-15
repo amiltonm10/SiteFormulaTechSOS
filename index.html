@@ -182,25 +182,46 @@
       height: 24px;
       margin-right: 10px;
     }
-@media (max-width: 600px) {
+/* Responsivo apenas para telas pequenas */
+@media (max-width: 768px) {
   header {
-    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
   }
 
   header img,
   .header-image {
-    max-width: 80px;
+    width: 100px;
+    height: auto;
+  }
+
+  .header-text {
+    order: 3;
+    width: 100%;
   }
 
   .header-text h2 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .header-text p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .cta-buttons a {
+    display: block;
+    margin: 0.5rem auto;
+    width: 90%;
   }
 }
-
   </style>
 </head>
 <body>
