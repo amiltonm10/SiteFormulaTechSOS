@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fórmula Tech SOS - Contato</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --primary: #06bde5;
+      --background: #F0F8FF;
+      --background-alt: #121a22;
+      --text: #ffffff;
+      --text-muted: #b0b8c1;
+      --accent: #1ce1d4;
+      --shadow: rgba(28, 225, 212, 0.2);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--background);
+      color: var(--text);
+      padding: 2rem 1rem;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+    }
+
+    header img {
+      max-width: 250px;
+      height: auto;
+    }
+
+    .header-text {
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .header-text h2 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .header-text p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .header-image {
+      width: 250px;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    nav {
+      background-color: var(--background-alt);
+      padding: 1rem;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .contact-section {
+      background: var(--background-alt);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 0 20px var(--shadow);
+    }
+
+    .contact-section h3 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+    }
+
+    .contact-section p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .contact-section ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    .contact-section li {
+      margin: 0.8rem 0;
+      font-size: 1.05rem;
+    }
+
+    .contact-section li a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 16px 12px 12px;
+      border-radius: 30px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+      transition: background 0.3s;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1ebc5c;
+    }
+
+    .whatsapp-btn img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="imagens/logoinicio.png" alt="Fórmula Tech SOS logo">
+      <div class="header-text">
+        <h2>Vamos conversar?</h2>
+        <p>Entre em contato e vamos juntos encontrar a solução ideal para o seu problema.</p>
+      </div>
+      <img src="imagens/eu.png" alt="Fórmula Tech SOS logo" class="header-image">
+    </header>
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Conheça a Fórmula Tech SOS</a>
+      <a href="servicos.html">Soluções</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <section class="contact-section">
+      <h3>Me encontre por aqui 👇</h3>
+      <p>Estou sempre por perto para te ajudar com tecnologia:</p>
+      <ul>
+        <li><strong>📞 WhatsApp:</strong> (11) 98066-5679</a></li>
+        <li><strong>📧 E-mail:</strong> amilton@formulatechsos.com</a></li>
+        <li><strong>📍 Localização:</strong> São Paulo - SP</li>
+<li>
+  <a href="https://wa.me/5511980665679" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #25D366; font-weight: bold; font-size: 16px;">
+    <img src="https://img.icons8.com/color/24/000000/whatsapp--v1.png" alt="WhatsApp" style="vertical-align: middle; margin-right: 8px;">
+    CONVERSE COMIGO PELO WHATSAPP - CLIQUE AQUI
+  </a>
+</li>
+      </ul>
+    </section>
+
+    <footer>
+      &copy; 2025 Fórmula Tech SOS — Amilton Manoel
+    </footer>
+  </div>
+
+  <a href="https://wa.me/5511980665679" class="whatsapp-btn" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    Me chame no WhatsApp
+  </a>
+</body>
+</html>

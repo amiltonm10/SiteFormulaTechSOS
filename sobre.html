@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fórmula Tech SOS - Sobre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #06bde5;
+      --background: #F0F8FF;
+      --background-alt: #121a22;
+      --text: #ffffff;
+      --text-muted: #b0b8c1;
+      --accent: #1ce1d4;
+      --shadow: rgba(28, 225, 212, 0.2);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--background);
+      color: var(--text);
+      padding: 2rem 1rem;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+    }
+
+    header img {
+      max-width: 250px;
+      height: auto;
+    }
+
+    .header-text {
+      text-align: center;
+      flex-grow: 1;
+    }
+
+    .header-text h2 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .header-text p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .header-image {
+      width: 250px;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav {
+      background-color: var(--background-alt);
+      padding: 1rem;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .about, .mission {
+      background: var(--background-alt);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 0 20px var(--shadow);
+      margin-bottom: 3rem;
+    }
+
+    .about h2, .mission h2 {
+      font-size: 2rem;
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .about p, .mission li {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .about strong, .mission strong {
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .mission ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    footer {
+      text-align: center;
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 4rem;
+    }
+
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 16px 12px 12px;
+      border-radius: 30px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 1000;
+      transition: background 0.3s;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1ebc5c;
+    }
+
+    .whatsapp-btn img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="imagens/logoinicio.png" alt="Fórmula Tech SOS logo">
+      <div class="header-text">
+        <h2>Transformando tecnologia em solução</h2>
+        <p>Ajudo empresas e pessoas a resolverem desafios com tecnologia de forma prática, humana e eficiente.</p>
+      </div>
+      <img src="imagens/eu.png" alt="Fórmula Tech SOS - Amilton Manoel" class="header-image">
+    </header>
+
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Conheça a Fórmula Tech SOS</a>
+      <a href="servicos.html">Soluções</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+
+    <section class="about">
+
+    <section class="mission">
+      <h2>Missão, Visão e Valores</h2>
+      <ul>
+        <li><strong>Missão</strong> - Levar soluções tecnológicas inteligentes, humanas e eficazes para pessoas e empresas, ajudando a transformar desafios em oportunidades com transparência, agilidade e proximidade.</li>
+        <li><strong>Visão</strong> - Ser referência em suporte e soluções de tecnologia que realmente resolvem, com inovação, empatia e compromisso com o resultado.</li>
+        <li><strong>Valores</strong> - Confiança, transparência, aprendizado contínuo, proximidade com o cliente, paixão por resolver problemas e ética em cada entrega.</li>
+      </ul>
+    </section>
+
+      <h2>Quem sou eu</h2>
+      <p>Desde pequeno, sempre fui muito curioso. Enquanto outros estavam brincando, eu estava desmontando computadores, mexendo nos cabos, instalando programas, testando, errando, aprendendo. A tecnologia sempre me fascinou, mesmo quando eu ainda não sabia direito o que era um “sistema”. Era puro instinto — eu queria entender como tudo funcionava.</p>
+      <p>Minha primeira formação foi em <strong>Administração pela ETEC</strong>, onde aprendi muito sobre organização, disciplina e o lado estratégico das empresas. Mas no fundo, eu sempre soube que queria mesmo era tecnologia. Logo depois, iniciei o <strong>técnico em Informática na ETEC</strong>, e ali tudo fez sentido. Foi nesse momento que consegui meu primeiro estágio e, desde então, nunca mais parei.</p>
+      <p>Passei por diversas áreas: técnico, auxiliar, analista de sistemas. Aproveitei cada oportunidade para crescer, errar, corrigir, aprender. Fiz cursos, treinamentos e me formei em <strong>Análise e Desenvolvimento de Sistemas</strong>, sempre buscando melhorar — não só como profissional, mas como pessoa.</p>
+      <p>O que sempre me motivou foi o sentimento de poder ajudar alguém através da tecnologia. Resolver um problema, automatizar uma rotina, entregar um sistema funcionando — isso sempre foi muito mais do que trabalho pra mim. Eu realmente me importo com o que faço. Cada cliente que atendo, trato como se fosse meu próprio projeto. Cada desafio, encaro com dedicação e carinho.</p>
+      <p>Foi com esse sentimento que criei a <strong>Fórmula Tech SOS</strong>. Uma empresa que une conhecimento técnico, visão prática e, principalmente, humanidade. Aqui, a tecnologia não precisa ser complicada ou distante. Ela pode — e deve — ser leve, acessível e resolver de verdade.</p>
+      <p>Mais do que entregar soluções, quero construir relações. Escutar, entender, adaptar. Levar um pouco da minha história para dentro de cada serviço prestado, mostrando que por trás dos cabos, códigos e telas, existe alguém que ama o que faz — e faz com o coração.</p>
+      <p class="final">Eu sou o Amilton Manoel. E se você procura alguém que não apenas entende de tecnologia, mas também se importa de verdade com o seu problema... é só me chamar.</p>
+    </section>
+
+
+    <footer>
+      &copy; 2025 Fórmula Tech SOS — Amilton Manoel
+    </footer>
+  </div>
+
+  <!-- Botão flutuante do WhatsApp -->
+  <a href="https://wa.me/5511980665679" class="whatsapp-btn" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    Me chame no WhatsApp
+  </a>
+</body>
+</html>
