@@ -5,219 +5,224 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fórmula Tech SOS</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary: #06bde5;
-      --background: #F0F8FF;
-      --background-alt: #121a22;
-      --text: #ffffff;
-      --text-muted: #b0b8c1;
-      --accent: #1ce1d4;
-      --shadow: rgba(28, 225, 212, 0.2);
-    }
+<style>
+  :root {
+    --primary: #06bde5;
+    --background: #F0F8FF;
+    --background-alt: #121a22;
+    --text: #ffffff;
+    --text-muted: #b0b8c1;
+    --accent: #1ce1d4;
+    --shadow: rgba(28, 225, 212, 0.2);
+  }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Inter', sans-serif;
-    }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
 
-    body {
-      background: var(--background);
-      color: var(--text);
-      padding: 2rem 1rem;
-      overflow-x: hidden;
-    }
+  body {
+    background: var(--background);
+    color: var(--text);
+    padding: 2rem 1rem;
+    overflow-x: hidden;
+  }
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-    }
+  .container {
+    max-width: 1000px;
+    margin: auto;
+  }
 
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    flex-wrap: nowrap;
+    gap: 1rem;
+  }
+
+  header img {
+    max-width: 250px;
+    height: auto;
+  }
+
+  .header-text {
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  .header-text h2 {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+
+  .header-text p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .header-image {
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  nav {
+    background-color: var(--background-alt);
+    padding: 1rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+
+  nav a:hover {
+    color: var(--accent);
+  }
+
+  .services {
+    background: var(--background-alt);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 0 20px var(--shadow);
+  }
+
+  .services h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+  }
+
+  .services ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .services li {
+    margin-bottom: 1.2rem;
+    padding-left: 1.8rem;
+    position: relative;
+    color: var(--text-muted);
+    font-size: 1.05rem;
+  }
+
+  .services li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+
+  .cta-buttons {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+
+  .cta-buttons a {
+    background-color: var(--primary);
+    color: var(--background);
+    text-decoration: none;
+    padding: 0.8rem 1.6rem;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 0 0.5rem;
+    transition: background 0.3s, transform 0.2s;
+  }
+
+  .cta-buttons a:hover {
+    background-color: var(--accent);
+    transform: scale(1.05);
+  }
+
+  footer {
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 4rem;
+  }
+
+  /* Botão flutuante do WhatsApp */
+  .whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    padding: 12px 16px 12px 12px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: background 0.3s;
+  }
+
+  .whatsapp-btn:hover {
+    background-color: #1ebc5c;
+  }
+
+  .whatsapp-btn img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+
+  /* RESPONSIVO PARA CELULAR */
+  @media (max-width: 768px) {
     header {
-      display: flex;
+      flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 3rem;
+      flex-wrap: nowrap;
+      gap: 0.5rem;
     }
 
-    header img {
-      max-width: 250px;
+    header img,
+    .header-image {
+      width: 60px;
       height: auto;
     }
 
     .header-text {
-      text-align: center;
-      flex-grow: 1;
+      flex: 1;
+      padding: 0 0.5rem;
     }
 
     .header-text h2 {
-      font-size: 2rem;
-      color: var(--primary);
-      margin-bottom: 1rem;
+      font-size: 1rem;
     }
 
     .header-text p {
-      font-size: 1.1rem;
-      color: var(--text-muted);
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    .header-image {
-      width: 250px; /* Ajuste o tamanho da imagem conforme necessário */
-      height: auto;
-      border-radius: 50%;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    nav {
-      background-color: var(--background-alt);
-      padding: 1rem;
-      border-radius: 12px;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin-bottom: 3rem;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--text-muted);
-      font-weight: 600;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--accent);
-    }
-
-    .services {
-      background: var(--background-alt);
-      padding: 2rem;
-      border-radius: 16px;
-      box-shadow: 0 0 20px var(--shadow);
-    }
-
-    .services h3 {
-      text-align: center;
-      font-size: 1.5rem;
-      margin-bottom: 1.5rem;
-      color: var(--primary);
-    }
-
-    .services ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .services li {
-      margin-bottom: 1.2rem;
-      padding-left: 1.8rem;
-      position: relative;
-      color: var(--text-muted);
-      font-size: 1.05rem;
-    }
-
-    .services li::before {
-      content: '✔';
-      position: absolute;
-      left: 0;
-      color: var(--accent);
-    }
-
-    .cta-buttons {
-      text-align: center;
-      margin-top: 2.5rem;
+      font-size: 0.85rem;
     }
 
     .cta-buttons a {
-      background-color: var(--primary);
-      color: var(--background);
-      text-decoration: none;
-      padding: 0.8rem 1.6rem;
-      border-radius: 8px;
-      font-weight: bold;
-      margin: 0 0.5rem;
-      transition: background 0.3s, transform 0.2s;
+      display: block;
+      width: 90%;
+      margin: 0.5rem auto;
     }
-
-    .cta-buttons a:hover {
-      background-color: var(--accent);
-      transform: scale(1.05);
-    }
-
-    footer {
-      text-align: center;
-      color: #666;
-      font-size: 0.9rem;
-      margin-top: 4rem;
-    }
-
-    /* Botão flutuante do WhatsApp */
-    .whatsapp-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: white;
-      padding: 12px 16px 12px 12px;
-      border-radius: 30px;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      font-weight: bold;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      z-index: 1000;
-      transition: background 0.3s;
-    }
-
-    .whatsapp-btn:hover {
-      background-color: #1ebc5c;
-    }
-
-    .whatsapp-btn img {
-      width: 24px;
-      height: 24px;
-      margin-right: 10px;
-    }
-@media (max-width: 768px) {
-  header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    gap: 0.5rem;
   }
+</style>
 
-  header img {
-    width: 60px;
-    height: auto;
-  }
-
-  .header-image {
-    width: 60px;
-    height: auto;
-    border-radius: 50%;
-  }
-
-  .header-text {
-    flex: 1;
-    padding: 0 0.5rem;
-  }
-
-  .header-text h2 {
-    font-size: 1rem;
-  }
-
-  .header-text p {
-    font-size: 0.85rem;
-  }
-}
-
-  </style>
 </head>
 <body>
   <div class="container">
