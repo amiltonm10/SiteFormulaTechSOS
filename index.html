@@ -66,7 +66,7 @@
     }
 
     .header-image {
-      width: 250px; /* Ajuste o tamanho da imagem conforme necessário */
+      width: 250px;
       height: auto;
       border-radius: 50%;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -155,7 +155,6 @@
       margin-top: 4rem;
     }
 
-    /* Botão flutuante do WhatsApp */
     .whatsapp-btn {
       position: fixed;
       bottom: 20px;
@@ -182,19 +181,80 @@
       height: 24px;
       margin-right: 10px;
     }
+
+    /* --- MEDIA QUERIES PARA RESPONSIVIDADE --- */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+      }
+
+      .header-image {
+        width: 150px;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .cta-buttons a {
+        display: block;
+        margin: 0.5rem auto;
+        width: 80%;
+      }
+
+      .services li {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 1rem 0.5rem;
+      }
+
+      .cta-buttons a {
+        font-size: 1.1rem;
+        padding: 1rem;
+      }
+
+      .services h3 {
+        font-size: 1.3rem;
+      }
+
+      .services li {
+        font-size: 0.95rem;
+      }
+
+      footer {
+        font-size: 0.8rem;
+      }
+
+      .whatsapp-btn {
+        padding: 10px 14px;
+        font-size: 0.9rem;
+      }
+
+      .whatsapp-btn img {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <img src="logoinicio.png" alt="Fórmula Tech SOS logo">
+      <img src="imagens/logoinicio.png" alt="Fórmula Tech SOS logo">
       <div class="header-text">
-        <h2>Transformando tecnologia em solução</h2>
-        <p>Ajudo empresas e pessoas a resolverem desafios com tecnologia de forma prática, humana e eficiente.</p>
+        <h2>Tecnologia sem complicação</h2>
+        <p>Resolva seus problemas com a Fórmula Tech SOS, a ajuda que você precisa, na hora que você precisa.</p>
       </div>
-      <img src="eu.png" alt="Fórmula Tech SOS - Amilton Manoel" class="header-image">
+      <img src="imagens/eu.png" alt="Fórmula Tech SOS logo" class="header-image">
     </header>
-
 
     <nav>
       <a href="index.html">Início</a>
@@ -205,32 +265,32 @@
 
     <section class="services">
       <h3>Como posso te ajudar?</h3>
-<ul>
-  <li><strong>Computador (🔧)</strong> - <strong>Suporte técnico ágil</strong><br>
-    Seu computador está lento? Eu cuido disso para você, garantindo que tudo funcione como deve.
-  </li>
-  <li><strong>Sites (🌐)</strong> - <strong>Criação de sites profissionais</strong><br>
-    Transforme sua ideia em um site bonito e eficiente, que gere resultados reais para você ou sua empresa.
-  </li>
-  <li><strong>Power BI (📊)</strong> - <strong>Transformação de dados em decisões</strong><br>
-    Crie dashboards automatizados que trazem insights prontos para você tomar decisões mais inteligentes e rápidas.
-  </li>
-  <li><strong>Python (🤖)</strong> - <strong>Automação de tarefas manuais</strong><br>
-    Desenvolvo soluções em Python para automatizar tarefas repetitivas, aumentando sua produtividade e reduzindo erros.
-  </li>
-  <li><strong>Infraestrutura de TI (🖧)</strong> - <strong>Infraestrutura de TI segura e estável</strong><br>
-    Planejo e implemento redes e servidores para garantir que sua infraestrutura seja eficiente e esteja pronta para o futuro.
-  </li>
-</ul>
+      <ul>
+        <li><strong>Computador (🔧)</strong> - <strong>Suporte técnico ágil</strong><br>
+          Seu computador está lento? Eu cuido disso para você, garantindo que tudo funcione como deve.
+        </li>
+        <li><strong>Sites (🌐)</strong> - <strong>Criação de sites profissionais</strong><br>
+          Transforme sua ideia em um site bonito e eficiente, que gere resultados reais para você ou sua empresa.
+        </li>
+        <li><strong>Power BI (📊)</strong> - <strong>Transformação de dados em decisões</strong><br>
+          Crie dashboards automatizados que trazem insights prontos para você tomar decisões mais inteligentes e rápidas.
+        </li>
+        <li><strong>Python (🤖)</strong> - <strong>Automação de tarefas manuais</strong><br>
+          Desenvolvo soluções em Python para automatizar tarefas repetitivas, aumentando sua produtividade e reduzindo erros.
+        </li>
+        <li><strong>Infraestrutura de TI (🖧)</strong> - <strong>Infraestrutura de TI segura e estável</strong><br>
+          Planejo e implemento redes e servidores para garantir que sua infraestrutura seja eficiente e esteja pronta para o futuro.
+        </li>
+      </ul>
 
-<ul>
-  <li><strong>Wi-Fi/Redes (🏠💼)</strong> - <strong>Estrutura ideal para sua casa ou empresa</strong><br>
-    Wi-Fi estável ou rede empresarial segura, feita sob medida para suas necessidades, sem complicação.
-  </li>
-  <li><strong>Computadores personalizados (🖥️)</strong> - <strong>Computadores sob medida</strong><br>
-    Esqueça os modelos genéricos. Crio máquinas sob medida para o seu trabalho ou lazer, com foco em desempenho e conforto.
-  </li>
-</ul>
+      <ul>
+        <li><strong>Wi-Fi/Redes (🏠💼)</strong> - <strong>Estrutura ideal para sua casa ou empresa</strong><br>
+          Wi-Fi estável ou rede empresarial segura, feita sob medida para suas necessidades, sem complicação.
+        </li>
+        <li><strong>Computadores personalizados (🖥️)</strong> - <strong>Computadores sob medida</strong><br>
+          Esqueça os modelos genéricos. Crio máquinas sob medida para o seu trabalho ou lazer, com foco em desempenho e conforto.
+        </li>
+      </ul>
     </section>
 
     <div class="cta-buttons">
@@ -243,7 +303,6 @@
     </footer>
   </div>
 
-  <!-- Botão flutuante do WhatsApp -->
   <a href="https://wa.me/5511980665679" class="whatsapp-btn" target="_blank">
     <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
     Me chame no WhatsApp
